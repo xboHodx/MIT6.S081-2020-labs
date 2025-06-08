@@ -81,7 +81,7 @@ kalloc(void)
   return (void*)r;
 }
 
-void freebytes(uint64 *dst)
+void kgetfreebytes(uint64 *dst)
 {
   *dst = 0;
   struct run *p = kmem.freelist;

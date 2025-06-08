@@ -107,8 +107,8 @@ uint64
 sys_sysinfo(void)
 {
   struct sysinfo info;
-  freebytes(&info.freemem);
-  procnum(&info.nproc);
+  kgetfreebytes(&info.freemem);
+  getprocnum(&info.nproc);
 
   // get virtual address
   uint64 dstaddr;

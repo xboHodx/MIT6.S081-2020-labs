@@ -697,7 +697,7 @@ procdump(void)
 }
 
 void
-procnum(uint64 *dst)
+getprocnum(uint64 *dst)
 {
   *dst = 0;
   struct proc *p;
