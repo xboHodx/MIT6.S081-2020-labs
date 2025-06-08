@@ -1,4 +1,3 @@
-#include "defs.h"
 
 struct sysinfo {
   uint64 freemem;   // amount of free memory (bytes)
